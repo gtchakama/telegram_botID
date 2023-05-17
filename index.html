@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram BotID</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./app.js"></script>
+
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto py-10">
+      <h1 class="text-3xl font-bold mb-6">Get Telegram Chat ID</h1>
+      <label for="http_api_token" class="block text-lg mb-2"
+        >HTTP API Token</label
+      >
+      <input
+        type="text"
+        id="http_api_token"
+        name="http_api_token"
+        placeholder="Your BOT API Token Here. (XXX:YYYYYYY)"
+        class="border border-gray-400 p-2 w-full rounded-lg text-lg mb-4"
+      />
+      <button
+        class="bg-green-500 text-white font-bold px-8 py-3 rounded-lg hover:bg-green-600 transition-colors duration-300"
+        onclick="getChatID()"
+      >
+        Get Chat ID
+      </button>
+      <hr class="my-8" />
+      <label for="chatid" class="block text-lg mb-2">The Chat ID = </label>
+      <input
+        type="text"
+        id="chatid"
+        readonly="true"
+        style="width: 150px;"
+        class="border border-gray-400 p-2 rounded-lg text-lg mb-4"
+      />
+      <pre
+        id="jsonresponse"
+        class="p-4 bg-white border border-gray-400 rounded-lg"
+      ></pre>
+    </div>
+
+    <script>
+      
+    </script>
+  </body>
+</html>
